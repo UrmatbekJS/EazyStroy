@@ -1,0 +1,77 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.VideoComponent {
+  position: relative;
+
+  video {
+    width: 100%;
+    object-fit: contain;
+    z-index: -1;
+  }
+
+  .VideoComponent__Overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.629);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    z-index: 0;
+    font-size: 2em; /* Размер шрифта можно регулировать по необходимости */
+
+    h1 {
+      animation: slideInFromLeft 1s ease-in-out;
+      width: 100%;
+      margin: 10px 0;
+      padding: 0 10px;
+    }
+
+    p {
+      animation: slideInFromRight 1.5s ease-in-out;
+      width: 100%;
+      margin: 10px 0;
+      padding: 0 10px;
+    }
+  }
+
+  @media (max-width: 427px) {
+    video {
+      width: 100vw; /* Занимает всю ширину экрана */
+    }
+
+    .VideoComponent__Overlay {
+      h1 {
+        font-size: 0.8em; /* Изменение размера шрифта на маленьких экранах */
+      }
+      p {
+        font-size: 0.4em;
+      }
+    }
+  }
+}
