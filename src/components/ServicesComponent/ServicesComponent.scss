@@ -1,15 +1,15 @@
-.GoodsComponent {
+.ServicesComponent {
   width: 100%;
   z-index: 1;
 
   h2 {
-    font-size: 30px;
+    font-size: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .GoodsComponent__List {
+  .ServicesComponent__List {
     margin: 40px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -18,10 +18,10 @@
 }
 
 @media (max-width: 427px) {
-  .GoodsComponent {
+  .ServicesComponent {
     h2 {
       text-align: center;
-      font-size: 1.5em;
+      font-size: 2em;
     }
   }
 }
