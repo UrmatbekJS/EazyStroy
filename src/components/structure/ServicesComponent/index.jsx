@@ -4,7 +4,7 @@ import "./ServicesComponent.scss";
 
 const ServicesComponent = () => {
   return (
-    <div className="ServicesComponent" id="goods">
+    <div className="ServicesComponent" id="services">
       <h2>Наши услуги</h2>
       <ServicesAccordion services={services} />
     </div>
