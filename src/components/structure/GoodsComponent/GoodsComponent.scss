@@ -20,6 +20,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Center the cards */
+
+    @media (max-width: 427px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   @media (max-width: 427px) {

@@ -10,7 +10,9 @@
   align-items: center;
   justify-content: space-between;
   z-index: 1;
-  //   display: flex;
+  @media (max-width: 427px) {
+    width: 350px;
+  }
 
   .GoodsCard__Data {
     img {
@@ -50,5 +52,9 @@
     border-radius: 5px;
     cursor: pointer;
     text-transform: uppercase;
+
+    @media (max-width: 427px) {
+      width: 350px;
+    }
   }
 }

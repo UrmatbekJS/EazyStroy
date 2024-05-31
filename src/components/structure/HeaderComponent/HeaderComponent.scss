@@ -71,9 +71,9 @@
     }
 
     .HeaderComponent__Left {
-      padding-left: 170px;
+      padding-left: 150px;
       img {
-        width: 60px;
+        width: 80px;
         height: auto;
       }
     }
@@ -106,7 +106,7 @@
   }
 
   &.open {
-    height: 330px;
+    height: 380px;
   }
 
   .BurgerMenu__Links {
