@@ -1,62 +1,24 @@
-export const construction = [
+export const goods = [
   {
-    imgUrl: "/images/dataImg/constructionImg/Цемент.png",
     id: 1,
-    name: "Цемент",
-    price: 300,
+    title: "Стрительно-отделочные материалы",
+    imgUrl: "/images/Стройматериалы.png",
+    description:
+      "Строительно-отделочные материалы включают в себя широкий спектр продуктов, необходимых для возведения и отделки зданий. В эту категорию входят цемент, кирпичи, бетон, штукатурка, краски и другие материалы, используемые для строительства и декорирования интерьеров и экстерьеров.",
   },
-  {
-    imgUrl: "/images/dataImg/constructionImg/Цемент.png",
-    id: 2,
-    name: "Цемент",
-    price: 300,
-  },
-  {
-    imgUrl: "/images/dataImg/constructionImg/Цемент.png",
-    id: 3,
-    name: "Цемент",
-    price: 300,
-  },
-];
 
-export const plumbing = [
   {
-    imgUrl: "/images/dataImg/plumbingImg/Ванна.png",
-    id: 1,
-    name: "Ванна",
-    price: 300,
-  },
-  {
-    imgUrl: "/images/dataImg/plumbingImg/Ванна.png",
     id: 2,
-    name: "Ванна",
-    price: 300,
+    title: "Сантехника",
+    imgUrl: "/images/Сантехника.jpg",
+    description:
+      "Сантехника охватывает все продукты, связанные с водоснабжением и водоотведением в зданиях. К сантехническим изделиям относятся ванны, раковины, унитазы, трубы, фитинги и смесители. Эти компоненты обеспечивают эффективное и безопасное распределение воды в жилых и коммерческих помещениях.",
   },
   {
-    imgUrl: "/images/dataImg/plumbingImg/Ванна.png",
     id: 3,
-    name: "Ванна",
-    price: 300,
-  },
-];
-
-export const electronic = [
-  {
-    imgUrl: "/images/dataImg/electronicImg/Кабель.png",
-    id: 1,
-    name: "Кабель",
-    price: 300,
-  },
-  {
-    imgUrl: "/images/dataImg/electronicImg/Кабель.png",
-    id: 2,
-    name: "Кабель",
-    price: 300,
-  },
-  {
-    imgUrl: "/images/dataImg/electronicImg/Кабель.png",
-    id: 3,
-    name: "Кабель",
-    price: 300,
+    title: "Электрика",
+    imgUrl: "/images/Электрика.png",
+    description:
+      "Электрика включает в себя все элементы, необходимые для проведения электричества в зданиях. В эту категорию входят кабели, выключатели, розетки, светильники, автоматические выключатели и другие электроустановочные изделия. Эти товары обеспечивают безопасное и надежное распределение электроэнергии в домах и предприятиях.",
   },
 ];
