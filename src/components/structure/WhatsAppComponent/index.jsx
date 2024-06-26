@@ -4,7 +4,7 @@ const WhatsAppComponent = () => {
   return (
     <div className="WhatsAppComponent">
       <a
-        href="https://wa.me/996707310701" // правильный формат URL
+        href="https://wa.me/+996708970597" // правильный формат URL
         target="_blank"
         rel="noopener noreferrer"
       >

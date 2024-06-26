@@ -1,15 +1,11 @@
-import ServicesComponent from "./components/structure/ServicesComponent";
-import AppLayout from "./components/layout/AppLayout";
-import GoodsComponent from "./components/structure/GoodsComponent";
+import { BrowserRouter } from "react-router-dom";
+import MyRoutes from "./routes/MyRoutes";
 
 const App = () => {
   return (
-    <>
-      <AppLayout>
-        <GoodsComponent />
-        <ServicesComponent />
-      </AppLayout>
-    </>
+    <BrowserRouter>
+      <MyRoutes />
+    </BrowserRouter>
   );
 };
 

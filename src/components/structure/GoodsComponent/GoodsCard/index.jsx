@@ -1,15 +1,12 @@
 import PropTypes from "prop-types";
 import "./GoodsCard.scss";
 
-const GoodsCard = ({ item }) => {
+const GoodsCard = () => {
   return (
     <div className="GoodsCard">
-      <div className="GoodsCard__Data">
-        <img src={item.imgUrl} alt={item.title} />
-        <h3>{item.title}</h3>
-        <p>{item.description}</p>
-      </div>
-      <div className="GoodsCard__Btn">Подробнее</div>
+      <img src="" alt="" />
+      <h3></h3>
+      <div className="GoodsCard__Btn">В наличии</div>
     </div>
   );
 };

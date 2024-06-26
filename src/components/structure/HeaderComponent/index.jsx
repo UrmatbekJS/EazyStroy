@@ -27,7 +27,7 @@ const HeaderComponent = () => {
     };
   }, []);
 
-  const phoneNumber = "+996707310701"; // Замените на ваш номер телефона
+  const phoneNumber = "+996708970597"; // Замените на ваш номер телефона
 
   const handleCall = () => {
     window.location.href = `tel:${phoneNumber}`;

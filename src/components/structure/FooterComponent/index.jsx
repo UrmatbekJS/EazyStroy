@@ -1,7 +1,7 @@
 import "./FooterComponent.scss";
 
 const FooterComponent = () => {
-  const phoneNumber = "+996755557312"; // Замените на ваш номер телефона
+  const phoneNumber = "+996708970597"; // Замените на ваш номер телефона
 
   const handleCall = () => {
     window.location.href = `tel:${phoneNumber}`;
@@ -25,7 +25,7 @@ const FooterComponent = () => {
         </a>
 
         <a
-          href="https://wa.me/996707310701" // правильный формат URL
+          href="https://wa.me/996708970597" // правильный формат URL
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -33,7 +33,7 @@ const FooterComponent = () => {
         </a>
       </div>
       <h2 className="FooterComponent__Call" onClick={handleCall}>
-        +996-707-310-701
+        +996 (708)-970-597
       </h2>
     </div>
   );
