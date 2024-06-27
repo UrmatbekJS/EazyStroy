@@ -1,4 +1,5 @@
 .ServicesComponent {
+  margin-top: 100px;
   width: 100%;
   z-index: 1;
 
@@ -7,13 +8,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .ServicesComponent__List {
-    margin: 40px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 

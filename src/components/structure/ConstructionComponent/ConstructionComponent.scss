@@ -1,0 +1,88 @@
+.ConstructionComponentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .ConstructionComponent__Left {
+    transform: rotate(180deg);
+  }
+}
+
+.ConstructionComponent {
+  h2 {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .ConstructionComponent__Container {
+    border-radius: 10px;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .ConstructionComponent__Container_Left,
+    .ConstructionComponent__Container_Right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ConstructionComponent__Container_Left {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .ConstructionComponent__Container_Right {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 20px;
+
+      a {
+        text-decoration: none;
+        color: blue;
+        margin: 10px 0;
+        text-align: left;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ConstructionComponent__Container {
+      width: 600px;
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 427px) {
+    .ConstructionComponent__Container {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding: 20px;
+
+      .ConstructionComponent__Container_Left,
+      .ConstructionComponent__Container_Right {
+        width: 100%;
+        text-align: center;
+        flex: 1;
+      }
+
+      .ConstructionComponent__Container_Left {
+        margin-bottom: 20px;
+      }
+
+      .ConstructionComponent__Container_Right {
+        align-items: left;
+        padding-left: 0;
+      }
+    }
+  }
+}

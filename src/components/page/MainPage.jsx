@@ -1,12 +1,14 @@
 import AppLayout from "../layout/AppLayout";
-import GoodsComponent from "../structure/GoodsComponent";
+import CatalogComponent from "../structure/CatalogComponent";
+// import GoodsComponent from "../structure/GoodsComponent";
 // import ServicesComponent from "../structure/ServicesComponent";
 
 const MainPage = () => {
   return (
     <div>
       <AppLayout>
-        <GoodsComponent />
+        <CatalogComponent />
+        {/* <GoodsComponent /> */}
         {/* <ServicesComponent /> */}
       </AppLayout>
     </div>

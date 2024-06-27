@@ -1,12 +1,13 @@
-.ServicesAccordion__Main {
+.ServicesAccordion {
   width: 90%;
-  margin: 10px auto;
+  margin: 0 auto;
 
-  .ServicesAccordion {
+  .ServicesAccordion__Container {
     cursor: pointer;
 
     .ServicesAccordion__Title {
       min-height: 40px;
+      color: #dfdfdf;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -18,6 +19,10 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.5s ease; // Уменьшил время анимации для лучшего визуального эффекта
+
+      p {
+        margin-left: 20px;
+      }
     }
 
     .ServicesAccordionDescription__Opened {

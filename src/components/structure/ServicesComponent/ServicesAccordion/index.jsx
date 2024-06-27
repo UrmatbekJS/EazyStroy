@@ -16,9 +16,12 @@ const ServicesAccordion = ({ services }) => {
   };
 
   return (
-    <div className="ServicesAccordion__Main">
+    <div className="ServicesAccordion">
       {services.map((services) => (
-        <div className="ServicesAccordion" key={services.servicesTitle}>
+        <div
+          className="ServicesAccordion__Container"
+          key={services.servicesTitle}
+        >
           <div
             className={`ServicesAccordion__Title ${
               openedAccordions.includes(services.servicesTitle)
