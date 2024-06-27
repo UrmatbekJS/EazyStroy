@@ -4,7 +4,7 @@ const BuildingToolsComponent = () => {
   return (
     <div className="BuildingToolsComponentWrapper">
       <div className="BuildingToolsComponent__Left">
-        <img src="/public/images/icon_arrowNext.png" alt="Prev" />
+        <img src="/images/icon_arrowNext.png" alt="Prev" />
       </div>
       <div className="BuildingToolsComponent">
         <h2>Строительные инструменты</h2>

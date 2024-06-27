@@ -12,8 +12,8 @@ const HouseholdProductsComponent = () => {
           <div className="HouseholdProductsComponent__Container_Left">
             <img
               width={200}
-              src="/images/dataImg/constructionImg/Цемент.png"
-              alt="Цемент"
+              src="/images/HouseholdProductsComponent.png"
+              alt="Хозтовары"
             />
           </div>
           <div className="HouseholdProductsComponent__Container_Right">
