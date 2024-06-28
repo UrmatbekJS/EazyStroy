@@ -1,53 +1,23 @@
-import "./ConstructionComponent.scss";
+import ProductComponent from "../ProductComponent";
 
 const ConstructionComponent = () => {
+  const links = [
+    { href: "", text: "Добавки для строительных растворов" },
+    { href: "", text: "Монтажные пены" },
+    { href: "", text: "Сыпучие материалы" },
+    { href: "", text: "Гипсокартон" },
+    { href: "", text: "Цемент" },
+    { href: "", text: "Сухие строительные смеси" },
+    { href: "", text: "Теплоизоляционные материалы" },
+    { href: "", text: "Стеновые и кладочные материалы" },
+  ];
+
   return (
-    <div className="ConstructionComponentWrapper">
-      <div className="ConstructionComponent__Left">
-        <img src="/images/icon_arrowNext.png" alt="Prev" />
-      </div>
-      <div className="ConstructionComponent">
-        <h2>Стройматериалы</h2>
-        <div className="ConstructionComponent__Container">
-          <div className="ConstructionComponent__Container_Left">
-            <img
-              width={200}
-              src="/images/dataImg/constructionImg/Цемент.png"
-              alt="Цемент"
-            />
-          </div>
-          <div className="ConstructionComponent__Container_Right">
-            <a href="">
-              <p>Добавки для строительных растворов</p>
-            </a>
-            <a href="">
-              <p>Монтажные пены</p>
-            </a>
-            <a href="">
-              <p>Сыпучие материалы</p>
-            </a>
-            <a href="">
-              <p>Гипсокартон</p>
-            </a>
-            <a href="">
-              <p>Цемент</p>
-            </a>
-            <a href="">
-              <p>Сухие строительные смеси</p>
-            </a>
-            <a href="">
-              <p>Теплоизоляционные материалы</p>
-            </a>
-            <a href="">
-              <p>Стеновые и кладочные материалы</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="ConstructionComponent__Right">
-        <img src="/images/icon_arrowNext.png" alt="Next" />
-      </div>
-    </div>
+    <ProductComponent
+      title="Стройматериалы"
+      imageSrc="/images/dataImg/constructionImg/Цемент.png"
+      links={links}
+    />
   );
 };
 

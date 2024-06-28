@@ -1,10 +1,9 @@
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import BuildingToolsComponent from "../BuildingToolsComponent";
-import ConstructionComponent from "../ConstructionComponent";
-import ServicesComponent from "../ServicesComponent";
 import "./CatalogComponent.scss";
+import Slider from "react-slick";
+import ConstructionComponent from "../ConstructionComponent";
+import BuildingToolsComponent from "../BuildingToolsComponent";
 import HouseholdProductsComponent from "../HouseholdProductsComponent";
 
 const CatalogComponent = () => {
@@ -15,13 +14,11 @@ const CatalogComponent = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-
   return (
-    <div className="CatalogComponent">
+    <div className="CatalogComponent" id="catalog">
       <h2 className="CatalogComponent__Title">Наш каталог</h2>
       <div className="CatalogComponent__Search">
         <input type="search" placeholder="Найти товар" />
-        <img width={25} src="/images/icon_search.png" alt="" />
       </div>
       <Slider {...settings}>
         <div>
@@ -34,7 +31,6 @@ const CatalogComponent = () => {
           <HouseholdProductsComponent />
         </div>
       </Slider>
-      <ServicesComponent />
     </div>
   );
 };

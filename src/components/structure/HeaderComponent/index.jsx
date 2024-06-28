@@ -49,8 +49,8 @@ const HeaderComponent = () => {
           <a href="#header" onClick={(e) => handleClick(e, "header")}>
             <p>Главная</p>
           </a>
-          <a href="#goods" onClick={(e) => handleClick(e, "goods")}>
-            <p>Товары</p>
+          <a href="#catalog" onClick={(e) => handleClick(e, "catalog")}>
+            <p>Каталог</p>
           </a>
           <a href="#services" onClick={(e) => handleClick(e, "services")}>
             <p>Услуги</p>
@@ -78,8 +78,8 @@ const HeaderComponent = () => {
           <a href="#header" onClick={(e) => handleClick(e, "header")}>
             <p>Главная</p>
           </a>
-          <a href="#goods" onClick={(e) => handleClick(e, "goods")}>
-            <p>Товары</p>
+          <a href="#catalog" onClick={(e) => handleClick(e, "catalog")}>
+            <p>Каталог</p>
           </a>
           <a href="#services" onClick={(e) => handleClick(e, "services")}>
             <p>Услуги</p>

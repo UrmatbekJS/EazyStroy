@@ -1,5 +1,6 @@
 import AppLayout from "../layout/AppLayout";
-import CatalogComponent from "../structure/CatalogComponent";
+import HomeComponent from "../structure/HomeComponent";
+// import CatalogComponent from "../structure/CatalogComponent";
 // import GoodsComponent from "../structure/GoodsComponent";
 // import ServicesComponent from "../structure/ServicesComponent";
 
@@ -7,7 +8,8 @@ const MainPage = () => {
   return (
     <div>
       <AppLayout>
-        <CatalogComponent />
+        <HomeComponent />
+        {/* <CatalogComponent /> */}
         {/* <GoodsComponent /> */}
         {/* <ServicesComponent /> */}
       </AppLayout>
