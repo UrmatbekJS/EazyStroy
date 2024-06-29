@@ -71,18 +71,20 @@
     }
 
     .HeaderComponent__Left {
-      margin: 0 auto;
+      // margin: 0 auto;
       img {
         width: 80px;
         height: auto;
       }
 
       @media (max-width: 427px) {
-        margin: 0 auto;
+        margin-left: 150px;
+        // margin: 0 auto;
       }
 
       @media (max-width: 377px) {
-        margin: 0 auto;
+        margin-left: 130px;
+        // margin: 0 auto;
       }
     }
 

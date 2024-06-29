@@ -1,25 +1,7 @@
 .CatalogComponent {
-  margin-top: 100px;
-  color: #fff;
-  overflow: hidden;
-
-  h2 {
-    padding-top: 0px;
-  }
-
   .CatalogComponent__Title {
-    // padding-top: 100px;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     margin: 20px 0;
-
-    @media (max-width: 427px) {
-      text-align: center;
-      font-size: 2em;
-    }
   }
 
   .CatalogComponent__Search {
@@ -57,7 +39,7 @@
   }
 
   .slick-slider {
-    position: relative;
+    // position: relative;
     display: block;
     box-sizing: border-box;
     user-select: none;
@@ -77,9 +59,9 @@
   }
 
   .slick-dots {
-    position: absolute;
-    bottom: -25px;
-    width: 100%;
+    // position: absolute;
+    // bottom: -25px; /* Adjust position as needed */
+    // width: 100%;
     display: flex !important;
     justify-content: center;
     list-style: none;
@@ -103,4 +85,41 @@
       background: #fff;
     }
   }
+
+  // .slick-prev,
+  // .slick-next {
+  //   font-size: 0;
+  //   line-height: 0;
+  //   position: absolute;
+  //   top: 50%;
+  //   display: block;
+  //   width: 20px;
+  //   height: 20px;
+  //   padding: 0;
+  //   -webkit-transform: translate(0, -50%);
+  //   -ms-transform: translate(0, -50%);
+  //   transform: translate(0, -50%);
+  //   cursor: pointer;
+  //   color: transparent;
+  //   border: none;
+  //   outline: none;
+  //   background: transparent;
+  // }
+
+  // .slick-prev:hover,
+  // .slick-next:hover,
+  // .slick-prev:focus,
+  // .slick-next:focus {
+  //   color: transparent;
+  //   outline: none;
+  //   background: transparent;
+  // }
+
+  // .slick-prev {
+  //   left: -25px;
+  // }
+
+  // .slick-next {
+  //   right: -25px;
+  // }
 }
