@@ -5,8 +5,19 @@ import Slider from "react-slick";
 import ConstructionComponent from "../ConstructionComponent";
 import BuildingToolsComponent from "../BuildingToolsComponent";
 import HouseholdProductsComponent from "../HouseholdProductsComponent";
+import { useState } from "react";
 
 const CatalogComponent = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : 0));
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) => (prevIndex < 2 ? prevIndex + 1 : prevIndex));
+  };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -14,6 +25,7 @@ const CatalogComponent = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
   return (
     <div className="CatalogComponent" id="catalog">
       <h2 className="CatalogComponent__Title">Наш каталог</h2>
@@ -22,13 +34,25 @@ const CatalogComponent = () => {
       </div>
       <Slider {...settings}>
         <div>
-          <ConstructionComponent />
+          <ConstructionComponent
+            activeIndex={activeIndex}
+            onPrevClick={handlePrev}
+            onNextClick={handleNext}
+          />
         </div>
         <div>
-          <BuildingToolsComponent />
+          <BuildingToolsComponent
+            activeIndex={activeIndex}
+            onPrevClick={handlePrev}
+            onNextClick={handleNext}
+          />
         </div>
         <div>
-          <HouseholdProductsComponent />
+          <HouseholdProductsComponent
+            activeIndex={activeIndex}
+            onPrevClick={handlePrev}
+            onNextClick={handleNext}
+          />
         </div>
       </Slider>
     </div>

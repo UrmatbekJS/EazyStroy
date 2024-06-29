@@ -1,10 +1,16 @@
 import PropTypes from "prop-types";
 import "./ProductComponent.scss";
 
-const ProductComponent = ({ title, imageSrc, links }) => {
+const ProductComponent = ({
+  title,
+  imageSrc,
+  links,
+  onPrevClick,
+  onNextClick,
+}) => {
   return (
     <div className="ProductComponentWrapper">
-      <div className="ProductComponent__Left">
+      <div className="ProductComponent__Left" onClick={onPrevClick}>
         <img src="/images/icon_arrowNext.png" alt="Prev" />
       </div>
       <div className="ProductComponent">
@@ -22,7 +28,7 @@ const ProductComponent = ({ title, imageSrc, links }) => {
           </div>
         </div>
       </div>
-      <div className="ProductComponent__Right">
+      <div className="ProductComponent__Right" onClick={onNextClick}>
         <img src="/images/icon_arrowNext.png" alt="Next" />
       </div>
     </div>
@@ -38,6 +44,8 @@ ProductComponent.propTypes = {
       text: PropTypes.string.isRequired,
     })
   ).isRequired,
+  onPrevClick: PropTypes.func.isRequired,
+  onNextClick: PropTypes.func.isRequired,
 };
 
 export default ProductComponent;
