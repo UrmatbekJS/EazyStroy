@@ -25,12 +25,13 @@
     font-weight: 600;
 
     @media (max-width: 427px) {
-      margin: 50px 0;
+      width: 300px;
+      margin: 50px auto;
       font-size: 20px;
     }
 
     @media (max-width: 377px) {
-      margin: 50px 0;
+      margin: 50px auto;
       font-size: 16px;
     }
   }
