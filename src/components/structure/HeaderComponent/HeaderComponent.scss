@@ -17,7 +17,7 @@
 
   .HeaderComponent__Left {
     img {
-      width: 90px;
+      width: 60px;
       height: auto;
     }
   }
@@ -71,14 +71,14 @@
     }
 
     .HeaderComponent__Left {
-      margin-left: 160px;
+      margin: 0 auto;
       img {
         width: 80px;
         height: auto;
       }
 
       @media (max-width: 377px) {
-        margin-left: 135px;
+        margin: 0 auto;
       }
     }
 
