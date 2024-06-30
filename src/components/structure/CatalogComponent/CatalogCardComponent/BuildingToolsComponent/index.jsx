@@ -22,7 +22,7 @@ const BuildingToolsComponent = () => {
   return (
     <CatalogCardComponent
       title="Строительные инструменты"
-      imageSrc="/public/images/BuildingToolsComponent.png"
+      imageSrc="/images/BuildingToolsComponent.png"
       links={links}
     />
   );
