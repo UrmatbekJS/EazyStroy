@@ -84,7 +84,7 @@ const MainComponent = () => {
           </p>
         </div>
         <div className="MainComponent__Second_Right" ref={secondRightRef}>
-          <img src="/images/icon_handshake.png" alt="Handshake" />
+          <img src="/images/handshake (1).png" alt="Handshake" />
         </div>
       </div>
     </div>

@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
-import "./ProductComponent.scss";
+import { Link } from "react-router-dom";
+import "./CatalogCardComponent.scss";
 
-const ProductComponent = ({
+const CatalogCardComponent = ({
   title,
   imageSrc,
   links,
@@ -9,33 +10,33 @@ const ProductComponent = ({
   onNextClick,
 }) => {
   return (
-    <div className="ProductComponentWrapper">
-      <div className="ProductComponent__Left" onClick={onPrevClick}>
+    <div className="CatalogCardComponentWrapper">
+      <div className="CatalogCardComponent__Left" onClick={onPrevClick}>
         <img src="/images/icon_arrowNext.png" alt="Prev" />
       </div>
-      <div className="ProductComponent">
-        <h2>{title}</h2>
-        <div className="ProductComponent__Container">
-          <div className="ProductComponent__Container_Left">
+      <div className="CatalogCardComponent">
+        <h2>{title}</h2>    
+        <div className="CatalogCardComponent__Container">
+          <div className="CatalogCardComponent__Container_Left">
             <img width={200} src={imageSrc} alt={title} />
           </div>
-          <div className="ProductComponent__Container_Right">
+          <div className="CatalogCardComponent__Container_Right">
             {links.map((link, index) => (
-              <a href={link.href} key={index}>
+              <Link to={link.href} key={index}>
                 <p>{link.text}</p>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
       </div>
-      <div className="ProductComponent__Right" onClick={onNextClick}>
+      <div className="CatalogCardComponent__Right" onClick={onNextClick}>
         <img src="/images/icon_arrowNext.png" alt="Next" />
       </div>
     </div>
   );
 };
 
-ProductComponent.propTypes = {
+CatalogCardComponent.propTypes = {
   title: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
   links: PropTypes.arrayOf(
@@ -48,4 +49,4 @@ ProductComponent.propTypes = {
   onNextClick: PropTypes.func.isRequired,
 };
 
-export default ProductComponent;
+export default CatalogCardComponent;

@@ -1,40 +1,46 @@
 .FooterComponent {
-  padding: 10px 0;
+  padding: 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   background-color: #000;
   color: #fff;
-
   gap: 20px;
 
-  .FooterComponent__Img {
-    width: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .FooterComponent__Map {
+    width: 100%;
+    max-width: 300px; // Измененный размер карты
+    margin-bottom: 20px;
 
-    #whatsapp {
-      width: 60px;
-    }
-
-    #tiktok {
-      width: 60px;
-    }
-
-    #instagram {
-      width: 60px;
-    }
-
-    #twogis {
-      width: 60px;
+    iframe {
+      width: 100%;
+      height: 200px; // Измененный размер карты
+      border: none;
+      border-radius: 10px;
     }
   }
 
-  .FooterComponent__Call {
-    cursor: pointer;
+  .FooterComponent__Social {
+    display: flex;
+    gap: 20px;
+
+    a {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .FooterComponent__Rights {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
   }
 }

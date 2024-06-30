@@ -1,17 +1,20 @@
 import { Route, Routes } from "react-router";
 import MainPage from "../components/page/MainPage";
-import ConstructionPage from "../components/page/ConstructionPage";
-import PlumbingPage from "../components/page/PlumbingPage";
-import ElectronicsPage from "../components/page/ElectronicsPage";
+// import ConstructionDetail from "../components/ConstructionDetail";
+// import BuildingToolsDetail from "../components/BuildingToolsDetail";
+// import HouseholdProductsDetail from "../components/HouseholdProductsDetail";
 
 const MyRoutes = () => {
   return (
     <div>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/construction" element={<ConstructionPage />} />
-        <Route path="/plumbing" element={<PlumbingPage />} />
-        <Route path="/electronics" element={<ElectronicsPage />} />
+        {/* <Route path="/construction/:id" element={<ConstructionDetail />} />
+        <Route path="/building-tools/:id" element={<BuildingToolsDetail />} />
+        <Route
+          path="/household-products/:id"
+          element={<HouseholdProductsDetail />}
+        /> */}
       </Routes>
     </div>
   );
