@@ -11,6 +11,36 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      .ServicesAccordion__Title_Name {
+        font-size: 30px;
+        font-weight: bold;
+
+        @media (max-width: 427px) {
+          font-size: 20px;
+        }
+      }
+
+      .ServicesAccordion__Title_Plus {
+        font-size: 50px;
+        font-weight: bold;
+
+        @media (max-width: 427px) {
+          font-size: 30px;
+        }
+      }
+
+      .ServicesAccordionPlus__Opened {
+        transform: rotate(45deg);
+        transition: all 0.3s ease;
+      }
+
+      .ServicesAccordionPlus__Closed {
+        transform: rotate(
+          0deg
+        ); // Исправил на 0deg, чтобы плюсик вернулся в начальное состояние
+        transition: all 0.3s ease;
+      }
     }
 
     .ServicesAccordionDescription {
@@ -21,7 +51,12 @@
       transition: max-height 0.5s ease; // Уменьшил время анимации для лучшего визуального эффекта
 
       p {
-        margin-left: 20px;
+        font-weight: 600;
+        margin: 10px;
+
+        @media (max-width: 427px) {
+          font-size: 15px;
+        }
       }
     }
 
@@ -33,54 +68,6 @@
     .ServicesAccordionDescription__Closed {
       max-height: 0;
       transition: max-height 0.5s ease;
-    }
-
-    .ServicesAccordion__Title_Plus {
-      font-size: 50px;
-      font-weight: bold;
-
-      @media (max-width: 427px) {
-        font-size: 30px;
-      }
-    }
-
-    .ServicesAccordionPlus__Opened {
-      transform: rotate(45deg);
-      transition: all 0.3s ease;
-    }
-
-    .ServicesAccordionPlus__Closed {
-      transform: rotate(
-        0deg
-      ); // Исправил на 0deg, чтобы плюсик вернулся в начальное состояние
-      transition: all 0.3s ease;
-    }
-
-    .ServicesAccordion__List {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .ServicesAccordion__List_Left {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        img {
-          border: 1px solid #000;
-          margin: 0px 10px 10px 0;
-          width: 60px;
-        }
-      }
-    }
-
-    .ServicesAccordion__Title_Name {
-      font-size: 30px;
-      font-weight: bold;
-
-      @media (max-width: 427px) {
-        font-size: 20px;
-      }
     }
   }
 }
